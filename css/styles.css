@@ -196,6 +196,7 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
+  cursor: pointer;
 
   border-color: var(--accent-color);
   background-color: var(--lightmode-color);
