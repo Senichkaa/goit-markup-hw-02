@@ -21,8 +21,20 @@
 body {
   font-family: "Roboto", sans-serif;
 
-  background-color: #ffffff;
+  background-color: var(--white);
   color: var(--primary-text-color);
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 /* logo */
 .logo {
@@ -32,7 +44,7 @@ body {
   font-size: 18px;
   line-height: 1.33;
   text-transform: uppercase;
-  letter-spacing: 0.03m;
+  letter-spacing: 0.03em;
 
   color: var(--title-text-color);
 }
@@ -65,7 +77,7 @@ body {
 .contact {
   color: var(--primary-text-color);
   font-size: 16px;
-  font-weight: 400;
+  font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -81,7 +93,6 @@ body {
 .hero-title {
   color: var(--white);
   font-size: 56px;
-  font-weight: 700;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
@@ -90,6 +101,7 @@ body {
   font-family: inherit;
   cursor: pointer;
   border-radius: 4px;
+  letter-spacing: 0.04em;
   border: none;
   display: flex;
   align-items: center;
@@ -126,7 +138,6 @@ body {
 /* work */
 .work-title {
   font-size: 36px;
-  font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
@@ -134,13 +145,15 @@ body {
   text-align: center;
   text-transform: capitalize;
 }
+.worker {
+  background-color: var(--white);
+}
 /* team */
 .team {
   background-color: var(--lightmode-color);
 }
 .team-title {
   font-size: 36px;
-  font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
@@ -185,7 +198,6 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.04em;
 
   padding: 12px 24px;
 
